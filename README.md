@@ -1,3 +1,18 @@
+
+# Running the coding assessment Project Steps 
+1. Run npm install 
+2. Run npm start 
+3. Once the project is loaded into localhost, It will ask the user to signup using google to see the data. 
+4. Created a dummy data.json in public folder, so that axios should be able to read the file and parse the response
+5. Assuming there is an API, that can provides a response for a given month and year and returns the dummy data. 
+6. Can use new Date() class to fetch the current year and month and send those params to the axios request. Didn't create one in the project as they are no longer required. 
+7. Used redux for store management and used thunk for middleware management. 
+8. I already have an google application called stream, that provided me a client token to integrate with google signin API's. 
+9. You can signout using the red button shown. 
+10. Added unit tests using react-testing-library to all the components. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
