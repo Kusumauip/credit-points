@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import CreditCardPoints from "./CreditCardPoints";
 import Header from "./Header";
-import axios  from "axios";
+import { CreditCardPointsWithHooks } from "./CreditCardPointsWithHooks";
 
 const App=()=>{
 
@@ -15,6 +15,7 @@ const App=()=>{
         </div>
         </BrowserRouter>
         <CreditCardPoints/>
+        <CreditCardPointsWithHooks/>
     </div>
     )
 }

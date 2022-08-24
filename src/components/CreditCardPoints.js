@@ -1,12 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchTransactionDetails} from '../actions'
-import { Table, } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 import { evalPoints } from '../utils/converter';
 
 
 class CreditCardPoints extends React.Component{
-    
+
+
     componentDidMount() {
         this.props.fetchTransactionDetails(); 
     }
@@ -44,12 +45,23 @@ class CreditCardPoints extends React.Component{
         )
     }
 
+    
+
     render(){
+       var divStyle = {
+            color: 'green',
+            marginTop: '50px',
+            border: '1px solid black'
+          };
+
         return(
-            <div>
+            <div style={divStyle}>
             {this.props.isSignedIn? 
-            <h1>Welcome {this.props.userId} {this.renderPoints()}</h1>
-            :<div>Please Sign In to view your points</div>}
+            <div>
+            <h2>Data rendering using redux</h2>
+            <h4>Welcome {this.props.userId} {this.renderPoints()}</h4>
+            </div>
+            :<h1>Please Sign In to view your points using react redux</h1>}
             
             </div>
         )
